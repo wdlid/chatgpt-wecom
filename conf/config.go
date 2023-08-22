@@ -34,6 +34,7 @@ type Logger struct {
 
 type GPT struct {
 	ApiKey string `mapstructure:"api_key"`
+	Model string `mapstructure:"model"`
 }
 
 type WeCom struct {
