@@ -87,7 +87,7 @@ func (h *callbackHandler) getGPTResponse(ctx context.Context, agentId int64, use
 	// GPT3Dot5TurboInstruct = "gpt-3.5-turbo-instruct"
 	
 	req := gogpt.CompletionRequest{
-		Model:           gogpt.GPT,
+		Model:           gogpt.GPT3Dot5Turbo,
 		MaxTokens:       1500,
 		Prompt:          content,
 		TopP:            1,
