@@ -27,6 +27,23 @@
   - 数据库支持 sqlite3，可以通过修改配置使用。如果使用 MySQL，需要自行创建数据库。
   - **数据表在程序启动时自动创建。**
 
+#### 修改模型
+file internal/api/receive.go
+
+Possible model form https://github.com/sashabaranov/go-openai/blob/a14bc103f4bc2b3ac40c844079fdf59dfdf62b0b/completion.go#L30:
+	// GPT432K0613           = "gpt-4-32k-0613"
+	// GPT432K0314           = "gpt-4-32k-0314"
+	// GPT432K               = "gpt-4-32k"
+	// GPT40613              = "gpt-4-0613"
+	// GPT40314              = "gpt-4-0314"
+	// GPT4                  = "gpt-4"
+	// GPT3Dot5Turbo0613     = "gpt-3.5-turbo-0613"
+	// GPT3Dot5Turbo0301     = "gpt-3.5-turbo-0301"
+	// GPT3Dot5Turbo16K      = "gpt-3.5-turbo-16k"
+	// GPT3Dot5Turbo16K0613  = "gpt-3.5-turbo-16k-0613"
+	// GPT3Dot5Turbo         = "gpt-3.5-turbo"
+	// GPT3Dot5TurboInstruct = "gpt-3.5-turbo-instruct"
+
 ### 2. 运行
 * **选择1：Docker运行（sqlite3版，推荐）**
 
